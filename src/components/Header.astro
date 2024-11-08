@@ -1,6 +1,6 @@
 ---
 import Hero from "./Hero.astro";
-
+import gsap from "gsap"
 ---
 
 <!-- CURSOR -->
@@ -356,6 +356,8 @@ import Hero from "./Hero.astro";
 </style>
 
 <script>
+  import gsap from "gsap"
+  
   function cursor() {
   let cursor = document.querySelector(".cursor");
   let body = document.querySelector("body");
