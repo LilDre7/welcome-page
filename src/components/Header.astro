@@ -1,5 +1,6 @@
 ---
 import Hero from "./Hero.astro";
+
 ---
 
 <!-- CURSOR -->
@@ -336,19 +337,5 @@ import Hero from "./Hero.astro";
   </div>
 </main>
 
-<script>
-  function cursor() {
-    let cursor = document.querySelector(".cursor");
-    let body = document.querySelector("body");
-
-    // NOW WE ARE GOING TO ADD AN EVENT LISTER ON OUR MOUSE
-
-    body.addEventListener("mousemove", (e) => {
-      gsap.to(cursor, {
-        x: e.x + "px",
-        y: e.y + "px",
-      });
-    });
-  }
-  cursor();
-</script>
+  <script src="../utils/main.js"></script>
+  <script src="../styles/style.css"></script>
