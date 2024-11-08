@@ -107,6 +107,13 @@
   justify-content: center;
 }
 
+@media screen and (max-width: 900px)  {
+  .section2 {
+    min-height: 0vh;
+  }
+}
+
+
 .section3 .three {
   display: flex;
   align-items: center;

@@ -1,115 +1,19 @@
 ---
+import AboutCardOne from "./AboutCardOne.astro";
 import Hero from "./Hero.astro";
+import Services from "./Services.astro";
+import VideoSection from "./VideoSection.astro";
 ---
 
 <!-- CURSOR -->
-<main>
-
+<body>
   <Hero />
 
-  <div class="section2">
-    <video src="./videos/section 2.mp4" muted loop autoplay></video>
-  </div>
+  <VideoSection />
 
-  <div class="section3">
-    <div class="three container">
-      <div class="left">
-        <video src="./videos/section 3.webm" muted loop autoplay></video>
-      </div>
+  <AboutCardOne />
 
-      <div class="right">
-        <h5>Give life to your ideas</h5>
-
-        <h1>
-          We pool our expertise to turn<br />
-          your wildest projects into<br />
-          singular experiences.
-        </h1>
-
-        <h1>
-          Discover our diverse expertise,<br />
-          each one providing a unique<br />
-          dimension to your vision.
-        </h1>
-      </div>
-    </div>
-  </div>
-
-  <div class="section4">
-    <div class="four">
-      <div class="services">
-        <h5>Services</h5>
-      </div>
-
-      <div class="moving-text">
-        <div class="text">
-          <div class="first">
-            <h1>Mind the business, we build the products</h1>
-            <video src="./videos/section4.webm" muted autoplay loop></video>
-          </div>
-
-          <div class="first">
-            <h1>Mind the business, we build the products</h1>
-            <video src="./videos/section4.webm" muted autoplay loop></video>
-          </div>
-
-          <div class="first">
-            <h1>Mind the business, we build the products</h1>
-            <video src="./videos/section4.webm" muted autoplay loop></video>
-          </div>
-
-          <div class="first">
-            <h1>Mind the business, we build the products</h1>
-            <video src="./videos/section4.webm" muted autoplay loop></video>
-          </div>
-        </div>
-      </div>
-
-      <!-- =========projects====== -->
-
-      <div class="projects">
-        <div class="bg">
-          <video src="./videos/project 1.webm" autoplay muted loop class="id-1"
-          ></video>
-          <video src="./videos/project 2.webm" autoplay muted loop class="id-2"
-          ></video>
-          <video src="./videos/project 3.webm" autoplay muted loop class="id-3"
-          ></video>
-        </div>
-
-        <div class="first-project container">
-          <div class="first" data-id="1">
-            <h1>BattleHeck</h1>
-
-            <div class="about">
-              <h4>UI/UX Design</h4>
-              <h4>Bradnding</h4>
-              <h4>Motion</h4>
-            </div>
-          </div>
-
-          <div class="first" data-id="2">
-            <h1>GreenBet</h1>
-
-            <div class="about">
-              <h4>UI/UX Design</h4>
-              <h4>Bradnding</h4>
-              <h4>Motion</h4>
-            </div>
-          </div>
-          <div class="first" data-id="3">
-            <h1>AirBus Gaming</h1>
-
-            <div class="about">
-              <h4>UI/UX Design</h4>
-              <h4>Bradnding</h4>
-              <h4>Motion</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <Services />
 
   <div class="section5">
     <div class="five container">
@@ -333,4 +237,4 @@ import Hero from "./Hero.astro";
       </div>
     </div>
   </div>
-</main>
+</body>
