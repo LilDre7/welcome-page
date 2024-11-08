@@ -337,5 +337,40 @@ import Hero from "./Hero.astro";
   </div>
 </main>
 
+
+<style>
+  /* NOW LETS MAKE OUR CURSOR */
+.cursor {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 80;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+</style>
+
+<script>
+  function cursor() {
+  let cursor = document.querySelector(".cursor");
+  let body = document.querySelector("body");
+
+  // NOW WE ARE GOING TO ADD AN EVENT LISTER ON OUR MOUSE
+
+  body.addEventListener("mousemove", (e) => {
+    gsap.to(cursor, {
+      x: e.x + "px",
+      y: e.y + "px",
+    });
+  });
+}
+cursor();
+</script>
+
   <script src="../utils/main.js"></script>
   <script src="../styles/style.css"></script>
