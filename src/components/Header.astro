@@ -1,33 +1,12 @@
 ---
-
+import Hero from "./Hero.astro";
 ---
 
 <!-- CURSOR -->
 <main>
   <div class="cursor"></div>
 
-  <div class="section1">
-    <div class="one container">
-      <div class="header">
-        <h2>Alvaro Aburto</h2>
-        <i class="fa-solid fa-bars"></i>
-      </div>
-
-      <div class="text-content">
-        <div class="head">
-          <h1>Digital products</h1>
-          <h1>creatives & immersives<span>*</span></h1>
-
-          <p>
-            We think and design unique experiences<br />
-            for tomorrow's innovatives products.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <video src="./videos/section1 bg.mp4" muted autoplay loop></video>
-  </div>
+  <Hero />
 
   <div class="section2">
     <video src="./videos/section 2.mp4" muted loop autoplay></video>
@@ -356,3 +335,20 @@
     </div>
   </div>
 </main>
+
+<script>
+  function cursor() {
+    let cursor = document.querySelector(".cursor");
+    let body = document.querySelector("body");
+
+    // NOW WE ARE GOING TO ADD AN EVENT LISTER ON OUR MOUSE
+
+    body.addEventListener("mousemove", (e) => {
+      gsap.to(cursor, {
+        x: e.x + "px",
+        y: e.y + "px",
+      });
+    });
+  }
+  cursor();
+</script>
